@@ -1,4 +1,16 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(xargs -I {} basename {})",
+      "Bash(npm uninstall *)",
+      "Bash(git mv *)",
+      "Bash(npm test *)",
+      "Bash(open -a Simulator)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"http://localhost:8082/status\")",
+      "Bash(which idb *)",
+      "Read(//Applications/**)"
+    ]
+  },
   "enabledPlugins": {
     "expo@claude-plugins-official": true
   }
